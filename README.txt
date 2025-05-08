@@ -24,8 +24,6 @@ Notes: None of them went off the rails enough to give me step by step directions
 	Query:
 INSERT INTO transactions (machine_id, total_amount, payment_type_id)
 VALUES (3, 3.75, (SELECT payment_type_id FROM payment_types WHERE payment_type = 'cash'));
-Your cleaned up query is: INSERT INTO transactions (machine_id, total_amount, payment_type_id)
-VALUES (3, 3.75, (SELECT payment_type_id FROM payment_types WHERE payment_type = 'cash'));
 
 	Result: One transaction was added to the database with the following information: machine ID 3, total amount $3.75, and payment type as cash.
 
